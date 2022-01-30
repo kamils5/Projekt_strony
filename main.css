@@ -1,0 +1,83 @@
+body
+{
+    font-family: serif;
+}
+
+html
+{
+    background-color: lightgray;
+}
+.stylowanie
+{
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.zdj
+{
+    width: 200px;
+    float: left;
+}
+.wiedza {
+        display:flex;
+  flex-wrap: nowrap;
+    position: relative;
+      margin: auto;
+    height: 1400px;
+        max-width:100%;
+max-height:100%;
+}
+
+.informacje {
+   height: 45%;  
+    clear: both;
+    position: relative; 
+      background-color: DodgerBlue;
+    
+}
+
+.doswiad
+{
+    height: 45%; 
+    position: relative;
+    background-color: DodgerBlue;
+    clear: both;
+}
+
+
+
+.wiedza > div {
+  width: 100%;
+  margin: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+      background-color: DodgerBlue;
+
+}
+.kontakt
+{
+    display: block;
+    overflow: auto;
+    background-color: DodgerBlue;
+}
+.kontakt > div {
+  text-align: center;
+    float:left;
+    clear:left;
+      background-color: white;
+ 
+}
+section
+{
+    line-height: 2px;
+}
+p
+{
+float:left;
+}
+.Dosw_text
+{
+    margin-left: 15px;
+    text-align: left; 
+    line-height: 80px;
+}
