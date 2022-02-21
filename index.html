@@ -5,7 +5,7 @@
     <meta name="keywords" content="przepisy">
     <meta name="description" content="Wspólne przepisy. Kamil Szloser">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home4You</title>
+    <title>Moje Portfolio</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -21,145 +21,55 @@
     <div class="container">
         
   <div class="Slajdy_pop">
-      <img src="zdj/przepis1.jpg" style="max-width: 600px; width: 100%;">
+      <img src="zdj/przepis1.jpg" style="max-width: 400px; width: 100%;">
 <h3> Sałatka ryżowa z tuńczykiem</h3>
            Sałatka meksykańska z ryżem, tuńczykiem i warzywami - papryką, kukurydzą, czerwoną fasolką, z dodatkiem ananasa i opcjonalnie chili.
             <a href="przepis1.html">Czytaj więcej..</a>
 </div>
 
   <div class="Slajdy_pop">
-      <img src="zdj/przepis2.jpg" style="max-width: 600px; width: 100%;">
+      <img src="zdj/przepis2.jpg" style="max-width: 400px; width: 100%;">
 <h3> Pomidory z mozzarellą</h3>
            Wspaniała i cudowna sałatka które może zagościć na każdym stole przy obiedzie
             <a href="przepis2.html">Czytaj więcej..</a>
 </div>
 
   <div class="Slajdy_pop">
-      <img src="zdj/przepis3.jpg" style="max-width: 600px; width: 100%;">
+      <img src="zdj/przepis3.jpg" style="max-width: 400px; width: 100%;">
 <h3> Sałatka szefa</h3>
            Wspaniała i cudowna sałatka które może zagościć na każdym stole przy obiedzie
             <a href="przepis3.html">Czytaj więcej..</a>
 </div>
     
-    
-  <a class="prev" onclick="zmiana_pop(-1)">❮</a>
-  <a class="next" onclick="zmiana_pop(1)">❯</a>
-
-  <div class="row">
-    <div class="column">
-      <img class="kursor" src="zdj/przepis1.jpg" style="width:100%" onclick="terazniejsze_pop(1)" alt="Przepis1">
-    </div>
-    <div class="column">
-      <img class="kursor" src="zdj/przepis2.jpg" style="width:100%" onclick="terazniejsze_pop(2)" alt="Przepis2">
-    </div>
-    <div class="column">
-      <img class="kursor" src="zdj/przepis3.jpg" style="width:100%" onclick="terazniejsze_pop(3)" alt="Przepis3">
-    </div>
-  </div>
 </div>    
-    </section>
-    <script>
-var slajdy_pop = 1;
-pokazanie_pop(slajdy_pop);
-
-// Next/previous controls
-function zmiana_pop(n) {
-  pokazanie_pop(slajdy_pop += n);
-}
-
-// Thumbnail image controls
-function terazniejsze_pop(n) {
-  pokazanie_pop(slajdy_pop = n);
-}
-
-function pokazanie_pop(n) {
-  var i;
-  var s_pop = document.getElementsByClassName("Slajdy_pop");
-  var dots = document.getElementsByClassName("demo");
-  if (n > s_pop.length) {slajdy_pop = 1}
-  if (n < 1) {slajdy_pop = s_pop.length}
-  for (i = 0; i < s_pop.length; i++) {
-    s_pop[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  s_pop[slajdy_pop-1].style.display = "block";
-}
-</script>  
-    
+    </section>     
     <hr>
 <h2>Nowe przepisy</h2>
 <section id="Nowe">
 <div class="container">
         
   <div class="Slajdy_nowe">
-      <img src="zdj/przepis1.jpg" style="max-width: 600px; width: 100%;">
+      <img src="zdj/przepis1.jpg" style="max-width: 400px; width: 100%;">
 <h3> Sałatka ryżowa z tuńczykiem</h3>
            Sałatka meksykańska z ryżem, tuńczykiem i warzywami - papryką, kukurydzą, czerwoną fasolką, z dodatkiem ananasa i opcjonalnie chili.
             <a href="przepis1.html">Czytaj więcej..</a>
-  </div>
+</div>
 
-  <div class="Slajdy_nowe">
-      <img src="zdj/przepis2.jpg" style="max-width: 600px; width: 100%;">
+  <div class="Slajdy_pop">
+      <img src="zdj/przepis2.jpg" style="max-width: 400px; width: 100%;">
 <h3> Pomidory z mozzarellą</h3>
            Wspaniała i cudowna sałatka które może zagościć na każdym stole przy obiedzie
             <a href="przepis2.html">Czytaj więcej..</a>
-  </div>
+</div>
 
-  <div class="Slajdy_nowe">
-      <img src="zdj/przepis3.jpg" style="max-width: 600px; width: 100%;">
+  <div class="Slajdy_pop">
+      <img src="zdj/przepis3.jpg" style="max-width: 400px; width: 100%;">
 <h3> Sałatka szefa</h3>
            Wspaniała i cudowna sałatka które może zagościć na każdym stole przy obiedzie
             <a href="przepis3.html">Czytaj więcej..</a>
-  </div>
-    
-    
-  <a class="prev" onclick="zmiana_nowe(-1)">❮</a>
-  <a class="next" onclick="zmiana_nowe(1)">❯</a>
-
-  <div class="row">
-    <div class="column">
-      <img class="kursor" src="zdj/przepis1.jpg" style="width:100%" onclick="terazniejsze_nowe(1)" alt="Przepis1">
-    </div>
-    <div class="column">
-      <img class="kursor" src="zdj/przepis2.jpg" style="width:100%" onclick="terazniejsze_nowe(2)" alt="Przepis2">
-    </div>
-    <div class="column">
-      <img class="kursor" src="zdj/przepis3.jpg" style="width:100%" onclick="terazniejsze_nowe(3)" alt="Przepis3">
-    </div>
-  </div>
+</div>
 </div>    
     </section>
-    <script>
-var slajdy_nowe = 1;
-pokazanie_nowe(slajdy_nowe);
-
-// Next/previous controls
-function zmiana_nowe(n) {
-  pokazanie_nowe(slajdy_nowe += n);
-}
-
-// Thumbnail image controls
-function terazniejsze_nowe(n) {
-  pokazanie_nowe(slajdy_nowe = n);
-}
-
-function pokazanie_nowe(n) {
-  var i;
-  var s_nowe = document.getElementsByClassName("Slajdy_nowe");
-  var dots = document.getElementsByClassName("kursor");
-  if (n > s_nowe.length) {slajdy_nowe = 1}
-  if (n < 1) {slajdy_nowe = s_nowe.length}
-  for (i = 0; i < s_nowe.length; i++) {
-    s_nowe[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  s_nowe[slajdy_nowe-1].style.display = "block";
-}
-</script>  
     <hr>
     
 <section id="Dodatkowe">
